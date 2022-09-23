@@ -1,4 +1,3 @@
-ines (42 sloc) 892 Bytes
 /**
  * cap_string - a function that capitalizes
  *              all words of a string
