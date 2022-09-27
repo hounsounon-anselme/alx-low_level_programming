@@ -31,7 +31,7 @@ An introductory project on:
 **[100-set_string.c](100-set_string.c)** - function that sets the value of a pointer to a char.
 
 **[101-crackme_password](101-crackme_password)** - file that contains the password for the [crackme2](https://github.com/holbertonschool/0x06.c) executable.
--download file [crackme2](https://raw.githubusercontent.com/holbertonschool/0x06.c/master/crackme2)
+- download file [crackme2](https://raw.githubusercontent.com/holbertonschool/0x06.c/master/crackme2)
 -go to the folder where you downloaded the file, then run 
 ```bash
 ltrace ./crackme2
