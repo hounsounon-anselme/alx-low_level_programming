@@ -38,12 +38,12 @@ ltrace ./crackme2
 ```
    you could observe that this program is accessing the environment variables like PATH, HOSTNAME, HOME, LANG, et al. Using the strncmp function in C language, it is comparing the first 20 characters with jennieandjayloveasm=. It is searching the environment variable for a name with jennieandjayloveasm.
    
--Let us give this program what it is looking for by creating a variable with that name with any value of choice.
+- Let us give this program what it is looking for by creating a variable with that name with any value of choice.
    
   ```bash
 export jennieandjayloveasm=okans
 ```
--Now, let us re-run the ltrace on the file
+- Now, let us re-run the ltrace on the file
  ```bash
 ltrace ./crackme2
 ```
@@ -52,19 +52,19 @@ From the look of it, you will see that it has calculated the MD5 hash of the env
 ```bash
 strcmp("e99a18c428cb38d5f260853678922e03"...,"8d2cc35e70deca8505ee61f089a46ec4"...) = 45
 ```
--Get the password
+- Get the password
 To confirm the actual password, you should try decrypting the MD5 hash value to the string. You can use [md5online](https://www.md5online.org/md5-decrypt.html) website for this.
--Après avoir obtenu le mot de passe , aller ensuite dans votre dossier de repository puis :
+- Après avoir obtenu le mot de passe , aller ensuite dans votre dossier de repository puis :
 .creer le fichier 101-crackme_password
 ```bash
 vi 101-crackme_password
 ```
 .press i, enter the password and press Esc
-.type
+- type
 ```bash
 :set binary noeol
 ```
-.type
+- type
 ```bash
 :wq
 ```
